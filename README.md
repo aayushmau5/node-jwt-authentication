@@ -1,6 +1,6 @@
 # node-jwt-authentication
 
-## What are JWT ?
+## What is JWT ?
 
 JWT stands for JSON Web Token. It is used for authentication mainly.
 
