@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Node Authentication
+        link(rel='stylesheet' href='/stylesheet/style.css')
+        link(href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet")
+    body
+        header
+            .logo <a href="/">AuthMe</a>
+            .links
+                if user 
+                    a(href='/dashboard') Welcome, #{user.email}
+                    a(href='/logout') Logout
+                else 
+                    a(href='/signup') Signup
+                    a(href='/login') Login
+        main
+            block content
